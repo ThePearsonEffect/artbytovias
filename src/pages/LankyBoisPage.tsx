@@ -32,7 +32,7 @@ const LankyBoisPage = () => {
               Clothing for the Comfortably Different
             </h2>
             <p className="text-lg text-neutral-600 mb-10 leading-relaxed">
-              Designed for tall, slim builds and anyone who values comfort over conformity. 
+              Designed for anyone who values comfort over conformity. 
               Our pieces embrace the beauty of being different, with cuts that celebrate 
               your unique proportions and style that speaks to your authentic self.
             </p>
@@ -58,9 +58,11 @@ const LankyBoisPage = () => {
                 Made for the Unique
               </h2>
               <p className="text-neutral-600 mb-6 leading-relaxed">
-                Finding clothes that fit when you're tall and slim shouldn't be a treasure hunt. 
-                Lanky Bois was born from the frustration of constantly rolling up sleeves, 
-                dealing with too-short inseams, and settling for ill-fitting basics.
+                Finding clothes that fit your body and reflect your style shouldn't be a treasure hunt. 
+                We started this brand from the shared frustration of constantly adjusting ill-fitting garments, 
+                searching endlessly for the right proportions, and settling for pieces that just don't work for real bodies. 
+                Whether you're tall, short, curvy, straight, or anywhere in between, everyone deserves clothing 
+                that fits beautifully and feels authentically you.
               </p>
               <p className="text-neutral-600 mb-6 leading-relaxed">
                 Every piece is thoughtfully designed with extended proportions, refined fits, 
