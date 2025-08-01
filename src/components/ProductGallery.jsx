@@ -31,7 +31,7 @@ const ProductGallery = () => {
           className="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition"
         >
           <img
-            src={`/images/${product.image}`}
+            src={`/${product.image}`}
             alt={product.name}
             loading="lazy"
             className="w-full h-72 object-contain rounded-md mb-4 bg-gray-100"
