@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import CategoryShowcase from '../components/CategoryShowcase';
 import FeaturedProducts from '../components/FeaturedProducts';
+import ProductGallery from '../components/ProductGallery';
 import DonationSection from '../components/DonationSection';
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
       <Hero />
       <CategoryShowcase />
       <FeaturedProducts />
+      <ProductGallery />
       <DonationSection />
     </Layout>
   );
