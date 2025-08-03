@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display text-xl mb-4 font-semibold">ARTISAN</h3>
             <p className="text-gray-300 mb-4">
-              Curated clothing, books, and photographic art for the discerning collector.
+              Curated clothing, inspiring books, and transformative life coaching for authentic living.
             </p>
           </div>
           
@@ -18,7 +18,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/shop/clothing" className="text-gray-300 hover:text-white transition">Clothing</Link></li>
               <li><Link to="/shop/books" className="text-gray-300 hover:text-white transition">Books</Link></li>
-              <li><Link to="/shop/photos" className="text-gray-300 hover:text-white transition">Photography</Link></li>
+              <li><Link to="/tribe-life" className="text-gray-300 hover:text-white transition">Life Coaching</Link></li>
               <li><Link to="/donate" className="text-gray-300 hover:text-white transition">Donate</Link></li>
             </ul>
           </div>

@@ -17,7 +17,7 @@ const ToviasSolePage = () => {
       format: 'Paperback',
       pages: 156,
       publishDate: '2023',
-      image: '/lovable-uploads/5e8b4822-2622-4556-a45b-bc223e27dde5.png',
+      image: '/images/5e8b4822-2622-4556-a45b-bc223e27dde5.png',
       description: 'A deeply personal collection of poetry exploring love, vulnerability, and the human experience. Each poem is a window into the soul\'s most intimate expressions.',
       awards: ['Poetry Book of the Year 2023']
     },
@@ -29,7 +29,7 @@ const ToviasSolePage = () => {
       format: 'Hardcover',
       pages: 208,
       publishDate: '2023',
-      image: '/lovable-uploads/0499924a-5a46-4167-bd2e-03e2ea1b8000.png',
+      image: '/images/0499924a-5a46-4167-bd2e-03e2ea1b8000.png',
       description: 'A powerful exploration of identity, perception, and the masks we wear. This collection challenges readers to look beyond the surface.',
       awards: ['Literary Excellence Award 2023']
     },
@@ -41,7 +41,7 @@ const ToviasSolePage = () => {
       format: 'Paperback',
       pages: 184,
       publishDate: '2022',
-      image: '/lovable-uploads/0df0a0fb-66cc-49e2-bed9-c45b60289914.png',
+      image: '/images/0df0a0fb-66cc-49e2-bed9-c45b60289914.png',
       description: 'An intimate look at the creative process and the evolution of an artist. Part memoir, part philosophy, this work examines the intersection of art and life.',
       awards: ['Best Creative Non-Fiction 2022']
     },
@@ -53,7 +53,7 @@ const ToviasSolePage = () => {
       format: 'Paperback',
       pages: 142,
       publishDate: '2024',
-      image: '/lovable-uploads/b19e5385-c2b9-4a9c-96fe-fdadcf90ceb8.png',
+      image: '/images/b19e5385-c2b9-4a9c-96fe-fdadcf90ceb8.png',
       description: 'A raw and honest collection giving voice to the unspoken thoughts and feelings that dwell within us all. These words break the silence of unexpressed emotions.',
       awards: ['Emerging Voice Award 2024'],
       isNew: true

@@ -1,0 +1,11 @@
+This is a placeholder for the Lanky Bois logo image file. 
+
+To complete the setup, you'll need to save an actual PNG image file here with the Lanky Bois logo.
+
+The logo should be:
+- A PNG file with transparent background
+- Approximately 200-300px wide
+- Black text/design (since we've set up a white background)
+- Should include "Lanky Bois" branding
+
+The current code is expecting this file at /images/lankybois/lanky-bois-logo.png and will display it with a white background for proper visibility.

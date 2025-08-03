@@ -73,7 +73,13 @@ const LankyBoisPage = () => {
                 Read Our Story
               </Button>
             </div>
-            <div className="bg-neutral-100 aspect-square rounded-lg"></div>
+            <div className="bg-white aspect-square rounded-lg overflow-hidden flex items-center justify-center p-8 shadow-inner border">
+              <img 
+                src="/images/lanky-bois-logo.png" 
+                alt="Lanky Bois Logo" 
+                className="w-full h-full object-contain max-w-md mx-auto filter drop-shadow-sm"
+              />
+            </div>
           </div>
         </div>
       </section>

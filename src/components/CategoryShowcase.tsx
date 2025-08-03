@@ -6,19 +6,19 @@ const categories = [
     id: 'clothing',
     name: 'Clothing',
     description: 'Unique apparel pieces with artistic designs',
-    image: 'https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1000',
+    image: '/images/5bfd11a8-6a41-43a9-a565-36fe34aaff68.png', // Signature Word Cloud Hoodie
   },
   {
     id: 'books',
     name: 'Books',
     description: 'Curated collection of insightful books',
-    image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1000',
+    image: '/images/0df0a0fb-66cc-49e2-bed9-c45b60289914.png', // The Poet, The Man, The Idea book cover
   },
   {
-    id: 'photos',
-    name: 'Photography',
-    description: 'Limited edition prints and artistic photography',
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000',
+    id: 'tribe-life',
+    name: 'Tribe Life Coaching',
+    description: 'Trained. Realigned. Inspired to become. Better today, brighter tomorrow.',
+    image: '/images/tribe-life-coaching-logo.png', // New Tribe Life Coaching logo
   },
 ];
 
@@ -34,7 +34,7 @@ const CategoryShowcase = () => {
           {categories.map((category) => (
             <Link 
               key={category.id}
-              to={`/shop/${category.id}`}
+              to={category.id === 'tribe-life' ? '/tribe-life' : `/shop/${category.id}`}
               className="group overflow-hidden rounded-lg shadow-md relative h-80 card-hover"
             >
               <div className="absolute inset-0">
@@ -50,7 +50,7 @@ const CategoryShowcase = () => {
                 <h3 className="text-2xl font-display font-medium mb-2">{category.name}</h3>
                 <p className="text-white/80 mb-4">{category.description}</p>
                 <span className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-md font-medium group-hover:bg-shop-accent transition-colors">
-                  Shop Collection
+                  {category.id === 'tribe-life' ? 'Learn More' : 'Shop Collection'}
                 </span>
               </div>
             </Link>
