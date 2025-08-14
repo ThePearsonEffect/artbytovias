@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Extra Long Slim Fit T-Shirt",
+        "price": 29.99,
+        "description": "Perfect for tall frames. Extra length in body and sleeves.",
+        "emoji": "👕"
+    }
+    // Add other products here...
+]

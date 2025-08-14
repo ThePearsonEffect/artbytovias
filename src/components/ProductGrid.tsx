@@ -1,5 +1,5 @@
 import ProductCard from './ProductCard'
-import products from '../products'
+import { products } from '../data/products'
 
 export default function ProductGrid() {
   return (

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+// 🔥 REMOVE this line — it's trying to import itself
+// import Home from './pages/Home';
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <main className="h-screen w-full bg-black text-white flex items-center justify-center">
       <div className="border-4 border-yellow-400 rounded-xl p-10 w-[90%] max-w-md text-center shadow-2xl">
@@ -8,6 +10,9 @@ export default function Home() {
         <p className="text-sm text-gray-300 mb-6">Art. Fashion. Words that move souls.</p>
 
         <div className="flex flex-col gap-4">
+          <Link to="/products" className="bg-yellow-400 hover:bg-yellow-300 text-black py-2 px-4 rounded font-bold">
+            View All Products
+          </Link>
           <Link to="/artbytovias" className="bg-yellow-400 hover:bg-yellow-300 text-black py-2 px-4 rounded font-bold">
             Enter Art By Tovias
           </Link>

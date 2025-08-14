@@ -1,30 +1,36 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Toaster } from 'sonner'
 import Footer from './Footer'
-import Home from './Home'
-// import ArtByTovias from './artbytovias/Home'
-import ArtByTovias from './ArtByTovias' // Update this path to match the actual file location and name
-import ToviasSole from './toviassole/Home'
-import LankyBoisHome from './lankybois/Home'
-import Cart from './Cart'
+import Home from './pages/Home'
+import AllProducts from './pages/AllProducts'
+import ToviasSole from './ToviasSole'
+import LankyBoisHome from './LankyBoisHome'
+import TribeLifeHome from './tribelife/Home'
+import Cart from './pages/Cart'
+import { CartProvider } from './CartContext'
 
 export default function App() {
-  const location = window.location;
-  const isLankyBois = location.pathname.startsWith('/lankybois');
+  const location = window.location
+  const isLankyBois = location.pathname.startsWith('/lankybois')
 
   return (
-    <BrowserRouter>
-      <div className="min-h-screen flex flex-col">
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/artbytovias" element={<ArtByTovias />} />
-            <Route path="/toviassole" element={<ToviasSole />} />
-            <Route path="/lankybois" element={<LankyBoisHome />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </main>
-        {!isLankyBois && <Footer />}
-      </div>
-    </BrowserRouter>
+    <CartProvider>
+      <Router>
+        <div className="min-h-screen flex flex-col">
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<AllProducts />} />
+              <Route path="/tribelife" element={<TribeLifeHome />} />
+              <Route path="/toviassole" element={<ToviasSole />} />
+              <Route path="/lankybois" element={<LankyBoisHome />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </main>
+          {!isLankyBois && <Footer />}
+        </div>
+        <Toaster />
+      </Router>
+    </CartProvider>
   )
 }
